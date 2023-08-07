@@ -1,0 +1,97 @@
+.task {
+  max-width: 40em;
+  width: 100%;
+  overflow-wrap: break-word; 
+  hyphens: auto;
+  gap: 1em;
+  border: .1em solid hsl(var(--txt) / 0.05);
+  padding: .6em;
+  border-radius: calc(var(--_radius) * 1.2);
+  background-color: hsl(var(--txt) / 0.1);
+}
+
+.task-group {
+  text-align: left;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: .9em;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .9em;
+
+}
+
+.taskdetails {
+  padding: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 1em;
+  margin: 0 1em;
+  color: hsl(var(--txt) / 0.8)
+  
+}
+
+.title {
+  max-width: 100%;
+  padding: 0 1em;
+  text-align: center;
+  justify-content: center;
+  overflow-wrap: break-word; 
+  hyphens: auto;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    width: 55vw;
+  }
+}
+
+.label {
+  font-size: 0.8em;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.checkbox {
+  width: 1em;
+  height: 1em;
+  
+}
+
+.checkbox:checked + label {
+  text-decoration: line-through;
+  color: hsl(var(--txt) / 0.3);
+}
+
+.checkbox:checked + .label .desc {
+  color: hsl(var(--txt) / 0.3);
+}
+
+.delete {
+  --accent: var(--accent1);
+}
+
+.error {
+  color: hsl(var(--accent1));
+  font-size: var(--_size);
+  text-align: center;
+}
+

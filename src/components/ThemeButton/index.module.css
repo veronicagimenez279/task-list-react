@@ -1,0 +1,17 @@
+.btn {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid hsl(var(--txt));
+    background-color: hsl(var(--bg));
+    cursor: pointer;
+    padding: .3em;
+}
+
+.btn:hover {
+    transition: transform .3s;
+    transform: scale(1.1);
+}
